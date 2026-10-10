@@ -29,11 +29,11 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | [Turki Ali Almutairi] |
+| **Student ID** | [443050208] |
+| **University Email** | [443050208]@std.psau.edu.sa |
+| **GitHub Username** | [Turki0900] |
+| **Repository Link** | [https://github.com/Turki0900/OS-Assignment1-Turki-Almutairi] |
  
 ---
 
