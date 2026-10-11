@@ -129,68 +129,81 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [September 20, 2026 - Time not recorded]
+**What I did**:Forked the starter repository and set up my GitHub project.
+
+**Details**:- Forked the starter repository on GitHub.
+- Renamed the repository to OS-Assignment1-Turki-Almutairi.
+- Set up the project files for the assignment.
+
+**Challenges**: I needed to understand how to set up the GitHub repository and organize the assignment files correctly.
+
+**Solution**: I followed the repository setup steps, renamed the repository, and organized the assignment files in VS Code.
+
+**Time spent**: Approximately 1 hour and 30 minutes (estimated).
+---
+
+### Entry 2 - [October 9, 2026 - Time not recorded]
+**What I did**: Updated my student ID in the project code.
 
 **Details**:
+  Updated the student ID to 443050208 in the random number generator.
+- Updated my student information in the project code.
 
-**Challenges**:
+**Challenges**: I did not face any difficulties while updating my student ID.
 
-**Solution**:
+**Solution**: No solution was needed because I did not face any difficulties.
 
-**Time spent**:
+**Time spent**: Approximately 30 minutes (estimated).
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 3 - [October 10, 2026 - Time not recorded]
+**What I did**: Filled in my student information in MY_WORK.md.
 
 **Details**:
+- Added my full name to MY_WORK.md.
+- Added my student ID (443050208) to MY_WORK.md.
 
-**Challenges**:
+**Challenges**: I did not face any difficulties while adding my student information.
 
-**Solution**:
+**Solution**: No solution was needed because I did not face any difficulties.
 
-**Time spent**:
+**Time spent**: Approximately 15 minutes (estimated).
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 4 - [October 11, 2026 - Time not recorded]
+**What I did**: Implemented Feature 1 by adding priority tracking to the Round Robin scheduler.
 
 **Details**:
+- Added a priority field to the Process class.
+- Generated a random priority from 1 to 10 for each process.
+- Displayed each process priority when it entered the ready queue.
+- Kept the original FIFO Round Robin scheduling order.
 
-**Challenges**:
+**Challenges**: The javac command was not recognized in the VS Code terminal, which made compiling the Java program difficult.
 
-**Solution**:
+**Solution**: I located the installed JDK in the Eclipse Adoptium folder and used the full path to javac.exe to compile the Java program successfully.
 
-**Time spent**:
+**Time spent**: Approximately 3 hours (estimated).
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 5 - [October 11, 2026 - Time not recorded]
+**What I did**: Tested Feature 1, verified the Java program, and pushed the changes to GitHub.
 
 **Details**:
+ Compiled and ran the Java program successfully.
+- Verified that all processes completed.
+- Committed Feature 1 changes to Git.
+- Pushed the Feature 1 commit to my GitHub repository.
 
-**Challenges**:
+**Challenges**: I had difficulty finding the correct Java compiler command because javac was not recognized in the VS Code terminal.
 
-**Solution**:
+**Solution**: I found the installed JDK in the Eclipse Adoptium folder and used the full path to javac.exe to compile the Java program successfully.
 
-**Time spent**:
-
----
-
-### Entry 5 - [Date and Time]
-**What I did**:
-
-**Details**:
-
-**Challenges**:
-
-**Solution**:
-
-**Time spent**:
+**Time spent**: Approximately 2 hours (estimated).
 
 ---
 
