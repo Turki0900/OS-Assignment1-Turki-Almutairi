@@ -207,16 +207,21 @@
 
 ---
 
-### Entry 6 - [Optional - Date and Time]
-**What I did**:
+### Entry 6 - [October 12, 2026, approximately 5:00 PM]
+**What I did**:Implemented and tested Feature 3 by tracking process waiting times and turnaround times in the Round Robin scheduler.
 
-**Details**:
+**Details**: 
+- Added process creation time and waiting time tracking using System.currentTimeMillis().
+- Updated waiting time whenever a process was selected from the ready queue.
+- Added a final summary table showing process name, burst time, waiting time, and turnaround time.
+- Compiled and ran the Java program successfully.
+- Committed and pushed Feature 3 separately to GitHub.
 
-**Challenges**:
+**Challenges**: I needed to understand how to calculate the total waiting time for a process that enters the ready queue multiple times during Round Robin scheduling.
 
-**Solution**:
+**Solution**: I recorded the time whenever a process entered the ready queue using System.currentTimeMillis(). Before running each process, I calculated how long it had waited and added that time to its total waiting time. I then tested the program and checked the final summary table.
 
-**Time spent**:
+**Time spent**: Approximately 5 hours (estimated).
 
 ---
 
@@ -224,13 +229,13 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [Approximately 12 hours and 15 minutes (estimated).]
 
-**Most challenging part**:
+**Most challenging part**: The most challenging part was understanding how to calculate the total waiting time when processes returned to the ready queue multiple times during Round Robin scheduling.
 
-**Most interesting learning**:
+**Most interesting learning**: The most interesting thing I learned was how Round Robin scheduling shares CPU time between processes using a time quantum, and how threads are used to simulate process execution in Java.
 
-**What I would do differently next time**:
+**What I would do differently next time**: Next time, I would review the assignment requirements earlier, plan my work more carefully, and test each feature immediately after implementing it to identify errors sooner.
 
 ---
 
