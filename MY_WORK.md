@@ -315,7 +315,7 @@ A process is an active program with its own memory space, whereas a thread is a 
 
 ## Question 2: Ready Queue Behavior
 
-**Question**: In Round-Robin scheduling, what happens when a process doesn't finish within its time quantum? Explain using an example from **your** program output, including **how many times that process was re-queued** before it finished, and explain why re-queueing matters for fairness.
+**Question**: If a process does not complete within the time quantum specified in Round Robin scheduling, it yields the CPU and returns to the end of the ready queue. In my program, P3 had a burst time of 4411ms and a time quantum of 2000ms. P3 had 2411ms remaining after its first execution, therefore it was requeued. P3 required three CPU turns to complete, therefore it was re-queued twice before finishing. This approach enhances fairness by giving other waiting processes a chance to execute before P3 runs again.
 
 > ⚠️ **WARNING:** The output snippet must come from **your own run** (with your student ID), not from a classmate or from this README.
 >
@@ -335,11 +335,11 @@ P3 yields CPU for context switch
 ```
 
 **Explanation of example:**
-In this output, P3 finished its 2000ms time quantum but still had 2411ms left. Because P3 had not completed, it released the CPU for a context switch. The scheduler then moved P3 back to the end of the ready queue. The ready queue displays P3 after P2, enabling the other waiting processes to get a chance to execute before P3 runs again.
+In this output, P3 utilized its 2000ms time quantum but still had 2411ms remaining, so it yielded the CPU and returned to the end of the ready queue. The scheduler then permitted other waiting processes to execute before giving P3 another turn. This demonstrates how Round Robin scheduling fairly distributes CPU time among processes.
 
 ## Question 3: Thread Lifecycle
 
-**Question**: A thread goes through these states: **New**, **Runnable**, **Running**, **Waiting**, **Terminated**. Walk through these states for one process (e.g., P1) from your simulation. For each state, explain **when** P1 enters it and **which line or method call** triggers the transition (`Thread.start()`, `Thread.join()`, `Thread.sleep()`, etc.).
+**Question**: I my application, a thread travels through several states: new, runnable, timed waiting, and terminated. When the scheduler creates a thread with the command new Thread(process), it enters the new state. When Thread.start() is invoked, the thread enters the Runnable state and becomes ready to execute. During Thread.sleep(), the process thread enters the Timed Waiting state until the sleep period is over. When the main thread invokes Thread.join(), it enters the Waiting state until the process thread is completed. Finally, once the run() procedure is completed, the process thread enters the Terminated state.
 
 > 💡 **TIP:** Follow P1 through the code: created in `addProcessToQueue()`, started in the scheduler loop, sleeping inside `run()`, and the main thread waiting on `join()`. Remember that **the main thread waits** on `join()`, while **P1's thread sleeps** in `Thread.sleep()`. Be clear about which thread is in which state.
 
