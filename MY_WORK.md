@@ -335,7 +335,7 @@ P3 yields CPU for context switch
 ```
 
 **Explanation of example:**
-In this output, P3 finished its 2000ms time quantum but still had 411ms left. Because P3 had not completed, it released the CPU for a context switch. The scheduler then moved P3 back to the end of the ready queue. The ready queue displays P3 after P2, enabling the other waiting processes to get a chance to execute before P3 runs again.
+In this output, P3 finished its 2000ms time quantum but still had 2411ms left. Because P3 had not completed, it released the CPU for a context switch. The scheduler then moved P3 back to the end of the ready queue. The ready queue displays P3 after P2, enabling the other waiting processes to get a chance to execute before P3 runs again.
 
 ## Question 3: Thread Lifecycle
 
